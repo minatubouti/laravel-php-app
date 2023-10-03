@@ -19,7 +19,7 @@ class CreateTasksTable extends Migration
             $table->string('title');                     // タスクのタイトル
             $table->text('description')->nullable();     //タスクの詳細（text、オプション）
             $table->date('deadline')->nullable();        //期限（date、オプション）
-            $table->enum('status', ['not_started', 'in_progress', 'completed']); //ステータス（未着手、進行中、完了など）
+            // $table->enum('status', ['not_started', 'in_progress', 'completed']); //ステータス（未着手、進行中、完了など）
             $table->timestamps();
         });
     }
